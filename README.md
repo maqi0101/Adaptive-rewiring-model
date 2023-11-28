@@ -1,9 +1,23 @@
-# Adaptive-rewiring-model
+# Adaptive Rewiring Model
 
-The codes presented here are the main core for simulating the paper "Adaptive interaction rewiring alters the structure and stability of a three-guild herbivore-plant-pollinator network". 
+The code presented in this repository constitutes the core for simulating the paper titled "Adaptive rewiring shapes structure and stability of a three-guild herbivore-plant-pollinator network."
 
-The code "Draw_ Ternary.py" was written using Python, and the other code files were written using Matlab. “LV_PHM.m” is the function code used to describe Community Dynamics (differential equations Eqn. 4a-4c). “cal_structure.m” is used to analyze network Modularity and Nestedness. “get_jacmat.m” is used to get the Jacobian matrix . “overlap.m” is used to calculate the niche overlap between two species. “rewiring.m” is used to describe the adaptive interaction rewiring process. “wire_back.m” is used to restore the original interaction relationship if adaptive rewiring is not successful. 
+## Code Description
 
-"Model_Core_Line.m" is the core program used to generate data and figures for line figures in the main text (e.g., Fig.2c-2e; Fig.3b,3e). "Model_Core_Ternary" is the main program used to generate data for ternary diagrams (note that the corresponding network metric data needs to be saved as a txt file, such as “resilience.txt”; e.g., Fig.2a,2b; Fig.3c,3f; Fig.4). "Draw_ Ternary.py" is a Python program used to read txt file data and draw it on ternary diagrams (note that "Draw_ Ternary.py" and "resilience.txt"  must be placed in the same folder).
+- **Draw_Ternary.py**: Python code for drawing ternary diagrams.
+- **LV_PHM.m**: Matlab function code describing Community Dynamics (differential equations Eqn. 4a-4c).
+- **cal_structure.m**: Matlab code for analyzing network Modularity and Nestedness.
+- **get_jacmat.m**: Matlab code for obtaining the Jacobian matrix.
+- **overlap.m**: Matlab code for calculating the niche overlap between two species.
+- **rewiring.m**: Matlab code describing the adaptive interaction rewiring process.
+- **wire_back.m**: Matlab code for restoring the original interaction relationship if adaptive rewiring is not successful.
 
-The Matlab library "BiMat" is used for analyzing the network structures, which is publicly available via the link: https://bimat.github.io/.
+## Core Programs
+
+- **Model_Core_Line.m**: Matlab core program for generating data and figures for line figures in the main text (e.g., Fig.2c-2e; Fig.3b,3e).
+- **Model_Core_Ternary.m**: Matlab main program for generating data for ternary diagrams (requires saving corresponding network metric data as a txt file, e.g., “resilience.txt”; e.g., Fig.2a,2b; Fig.3c,3f; Fig.4).
+- **Draw_Ternary.py**: Python program used to read txt file data and draw it on ternary diagrams (note that "Draw_Ternary.py" and "resilience.txt" must be placed in the same folder).
+
+## External Library
+
+The Matlab library "BiMat" is utilized for analyzing network structures. It is publicly available [here](https://bimat.github.io/).
